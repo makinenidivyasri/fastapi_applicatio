@@ -6,8 +6,8 @@ from . import schemas
 
 app = FastAPI()
 
-all_posts = [{"title":"trams","content":"the trams size is between bus and train","post_id": 1},
-        {"title":"sunrise","content":"sunraises at 5 and sets at 9","post_id": 2}]
+all_posts = [{"post_id": 1,"title":"Learning python","content":"There are lots of content in online platforms to learn python"},
+        {"post_id": 2,"title":"Fastapi","content":"Fastapi is a modern web framework to built python APIs"}]
 
 
 @app.get("/posts",status_code=status.HTTP_200_OK)
